@@ -12,7 +12,12 @@ app.use(express.static("public"))
 
 io.on("connection", (socket) => {
 
-    console.log("User is Connected:", socket.id)
+    console.log("User is Connected on:", socket.id);
+    socket.on("message",(message) => {
+        console.log("message aya :", message)
+        io.emit("message", message)
+    })
+    
 
 })
 

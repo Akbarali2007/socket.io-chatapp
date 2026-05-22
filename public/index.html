@@ -7,11 +7,16 @@
 </head>
 <body>
     <h1>Socket.IO Chat App</h1>
-    <input type="text" id="message-input">
+     <h2 id="onlineUsers">Online Users:</h2>
+    <input type="text" id="message-input" placeholder="Enter your message">
 
     <button id="send-btn">
         Send
     </button>
+    <div>
+        <input type="text" id="username" placeholder="Enter your username">
+        <button id="joinbtn">join</button>
+    </div>
 
     <ul id="messages"></ul>
 
